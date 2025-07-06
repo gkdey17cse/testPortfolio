@@ -1,11 +1,13 @@
 const express = require('express');
 const path = require('path');
+const serverless = require('serverless-http'); // <-- KEY LINE
+
 const app = express();
 
-// Serve static assets from /public folder
+// Serve static files
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-// Utility to load HTML from views folder
+// Views folder path
 const render = (page) => path.join(__dirname, '..', 'views', `${page}.html`);
 
 // Define routes
@@ -19,4 +21,5 @@ app.get('/education', (_, res) => res.sendFile(render('education&certification')
 app.get('/projects', (_, res) => res.sendFile(render('projects')));
 app.get('/skills', (_, res) => res.sendFile(render('skills')));
 
-module.exports = app;
+// ✅ EXPORT using serverless-http wrapper
+module.exports = serverless(app);

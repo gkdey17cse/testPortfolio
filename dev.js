@@ -1,6 +1,10 @@
-const app = require('./api/index');
-const PORT = process.env.PORT || 3000;
+const express = require('express');
+const path = require('path');
+const app = require('./api/index').default || require('./api/index'); // ⬅️ fallback for local
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
-});
+if (typeof app.listen === 'function') {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`🚀 Local server running at http://localhost:${PORT}`);
+  });
+}
