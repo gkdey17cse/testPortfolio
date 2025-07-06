@@ -44,6 +44,7 @@ portfolio-multipage/
 │   ├── ...
 ├── server.js
 ├── package.json
+├── vercel.json
 └── tailwind.config.js
 └── .gitignore
 ```
