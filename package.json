@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "type": "commonjs",
-  "main": "api/index.js",
+  "main": "dev.js",
   "scripts": {
     "dev": "nodemon dev.js"
   },

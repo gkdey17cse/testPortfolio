@@ -1,16 +1,15 @@
+const serverless = require('serverless-http');
 const express = require('express');
 const path = require('path');
-const serverless = require('serverless-http'); // <-- KEY LINE
 
 const app = express();
 
 // Serve static files
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-// Views folder path
+// HTML renderer
 const render = (page) => path.join(__dirname, '..', 'views', `${page}.html`);
 
-// Define routes
 app.get('/', (_, res) => res.sendFile(render('index')));
 app.get('/about', (_, res) => res.sendFile(render('about')));
 app.get('/experience', (_, res) => res.sendFile(render('experience')));
@@ -21,5 +20,5 @@ app.get('/education', (_, res) => res.sendFile(render('education&certification')
 app.get('/projects', (_, res) => res.sendFile(render('projects')));
 app.get('/skills', (_, res) => res.sendFile(render('skills')));
 
-// ✅ EXPORT using serverless-http wrapper
+// Export serverless handler
 module.exports = serverless(app);
