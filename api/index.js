@@ -2,12 +2,13 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// Static files (CSS, JS, images, JSON)
+// Serve static assets from /public folder
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
-// Serve HTML pages from /views
+// Utility to load HTML from views folder
 const render = (page) => path.join(__dirname, '..', 'views', `${page}.html`);
 
+// Define routes
 app.get('/', (_, res) => res.sendFile(render('index')));
 app.get('/about', (_, res) => res.sendFile(render('about')));
 app.get('/experience', (_, res) => res.sendFile(render('experience')));
@@ -18,4 +19,4 @@ app.get('/education', (_, res) => res.sendFile(render('education&certification')
 app.get('/projects', (_, res) => res.sendFile(render('projects')));
 app.get('/skills', (_, res) => res.sendFile(render('skills')));
 
-module.exports = app; // ✅ Must export for Vercel
+module.exports = app;
