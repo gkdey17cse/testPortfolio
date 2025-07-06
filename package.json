@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "api/index.js",
   "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon dev.js"
+  },
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
