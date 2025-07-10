@@ -1,4 +1,4 @@
-[
+const education = [
   {
     "id": 4,
     "degree": "Master of Technology in Computer Science & Engineering",
@@ -32,3 +32,4 @@
     "logo": "./assets/Images/Graduation_Cap_Degree.png"
   }
 ]
+module.exports = education ;

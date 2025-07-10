@@ -1,4 +1,4 @@
-[
+const certificates = [
   {
     "id": 1,
     "name": "Certified Java Developer",
@@ -18,3 +18,4 @@
     "link": "./assets/Images/Certificate_Coursera_Programing Fundamental.jpg"
   }
 ]
+module.exports = certificates ;

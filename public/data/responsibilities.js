@@ -1,4 +1,4 @@
-[
+const responsibilities = [
   {
     "description": "Working upon research project on network simulations and distributed ML systems under IIITD's Network Security Lab.",
     "link": "./PageNotFound.html",
@@ -20,3 +20,5 @@
     "duration": "(Jan,23 - Jan,24)"
   }
 ]
+
+module.exports = responsibilities;

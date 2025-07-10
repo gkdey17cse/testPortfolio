@@ -1,4 +1,4 @@
-[
+const minorProjects = [
   {
     "title": "Aspect Based Sentiment Analysis",
     "domain": "Natural Language Processing",
@@ -42,3 +42,5 @@
     "link": "https://gkdey17cse.github.io/InfoAidtech_Internship/Task1_ProductLandingPage.html"
   }
 ]
+
+module.exports = minorProjects;

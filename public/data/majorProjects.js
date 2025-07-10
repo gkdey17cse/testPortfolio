@@ -1,4 +1,4 @@
-[
+const majorProjects = [
   {
     "id": 1,
     "title": "Ratatouillegen",
@@ -32,3 +32,5 @@
     "link": "./pagenotfound.html"
   }
 ]
+
+module.exports = majorProjects ;

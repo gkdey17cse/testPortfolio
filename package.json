@@ -1,16 +1,22 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "type": "commonjs",
-  "main": "dev.js",
+  "name": "newportfolio",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon dev.js"
+    "build": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/output.css --watch",
+    "start": "nodemon server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "dependencies": {
-    "express": "^5.1.0",
-    "serverless-http": "^3.0.0"
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "autoprefixer": "^10.4.21",
+    "nodemon": "^3.1.10",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
   }
 }
