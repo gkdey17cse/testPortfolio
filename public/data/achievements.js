@@ -1,4 +1,4 @@
-[
+const achievements = [
   {
     "description": "Cleared the GATE with CSE & DA in Year 2024",
     "link": "./PageNotFound.html"
@@ -12,3 +12,5 @@
     "link": "./PageNotFound.html"
   }
 ]
+
+module.exports = achievements ;

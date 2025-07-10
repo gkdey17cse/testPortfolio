@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CSS from /output.css -->
+  <link href="/CSS/output.css" rel="stylesheet" />
+  <!-- Backup Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Gour Krishna Dey | Portfolio</title>
+  <link rel="icon" type="image/png" href="/assets/Images/Profile2.png" />
+
+  <!-- Social Media Thumbnail Preview -->
+  <meta property="og:title" content="Gour Krishna Dey | Portfolio" />
+  <meta property="og:description" content="Aspiring ML Engineer | M.Tech @ IIIT-Delhi | Web Dev, NLP, UI/UX Design" />
+  <meta property="og:image" content="https://res.cloudinary.com/dkjlvvhmi/image/upload/v1747965003/Thumbnail2_gvtncf.jpg" />
+  <meta property="og:url" content="https://gkdey17cse.github.io/gkdey/src/index.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gour Krishna Dey | Portfolio" />
+  <meta name="twitter:description" content="Aspiring ML Engineer | M.Tech @ IIIT-Delhi | Web Dev, NLP, UI/UX Design" />
+  <meta name="twitter:image" content="https://res.cloudinary.com/dkjlvvhmi/image/upload/v1747965003/Thumbnail2_gvtncf.jpg" />
+
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Mulish&family=Poppins&family=Raleway&family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- Owl Caraousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Anime js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="CSS/animate.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+</head>
+
+<!-- Updated HTML with Tailwind CSS theme support -->
+
+<body class="theme-teal relative mx-auto text-white tracking-wider" style="font-family: 'Poppins', sans-serif">
+  <!-- ✅ Background Image -->
+  <div class="fixed inset-0 w-screen h-screen bg-cover bg-center bg-no-repeat -z-20" style="background-image: url('/assets/Images/IIITDImage.jpg'); background-attachment: fixed;"></div>
+  <div class="fixed inset-0 w-screen h-screen bg-black opacity-70 -z-10"></div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 xl:min-h-screen z-10 relative" style="font-family: 'Mulish', sans-serif">
+    <!-- ✅ Sidebar -->
+    <div class="hidden lg:flex col-span-2 bg-gradient-to-b from-[var(--bg-primary)] to-[var(--bg-primary)] via-[var(--bg-secondary)] rounded-r-2xl h-screen sticky top-0 shadow-md">
+      <div class="flex flex-col justify-center items-center p-2 gap-16 md:gap-10 flex-grow">
+        <div class="p-2 w-3/4">
+          <div class="flex justify-center items-center overflow-hidden rounded-full m-1 p-0.5 py border-4 border-[var(--bg-primary)]">
+            <img src="/assets/Images/Profile.png" alt="Profile Image" class="scale-110 hover:scale-105 duration-300 w-auto md:w-auto" />
+          </div>
+        </div>
+        <div class="text-center flex flex-col gap-1.5 py-4 md:gap-0 tracking-wider">
+          <h2 class="text-white text-base xl:text-lg font-semibold wow animate__bounceIn">Gour Krishna Dey</h2>
+          <p class="text-white text-xs xl:text-sm">M.Tech Student | IIIT-Delhi</p>
+          <p class="text-white text-xs xl:text-sm">Aspiring ML Engineer</p>
+          <p class="text-white text-xs xl:text-sm">MERN Developer</p>
+        </div>
+        <div id="menu-content" class="py-1.5 text-white font-medium text-xs xl:text-sm 2xl:text-base wow animate__fadeInLeftBig" data-wow-duration="0.5s">
+          <div class="flex flex-col items-center gap-2">
+            <a href="/" class="block hover:font-bold  transition duration-300 active:translate-x-2">About Myself</a>
+            <a href="/experience" class="block hover:font-bold  transition duration-300 active:translate-x-2">Experience</a>
+            <a href="/projects" class="block hover:font-bold  transition duration-300 active:translate-x-2">Projects</a>
+            <a href="/education" class="block hover:font-bold  transition duration-300 active:translate-x-2">Education</a>
+            <a href="/skills" class="block hover:font-bold  transition duration-300 active:translate-x-2">Skills</a>
+            <a href="/achievements" class="block hover:font-bold  transition duration-300 active:translate-x-2">Achievements</a>
+            <a href="/contact" class="block hover:font-bold  transition duration-300 active:translate-x-2">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ Main Content -->
+    <div class="col-span-1 lg:col-span-10 relative z-10 xl:pr-4">
+
+      <div class="lg:hidden sticky top-0 z-50 bg-[var(--bg-tertiary)] shadow-md">
+        <div class="flex justify-between items-center px-4 py-2.5">
+          <img src="/assets/Images/Profile.png" alt="Profile" class="rounded-full w-10 h-11" />
+          <div class="flex gap-3 items-center justify-center">
+            <button onclick="setTheme('teal')" class="w-6 h-6 rounded-full bg-teal-500 hover:scale-110 transition" title="Teal"></button>
+            <button onclick="setTheme('amber')" class="w-6 h-6 rounded-full bg-amber-500 hover:scale-110 transition" title="Amber"></button>
+            <button onclick="setTheme('red')" class="w-6 h-6 rounded-full bg-red-500 hover:scale-110 transition" title="Red"></button>
+            <button onclick="setTheme('lime')" class="w-6 h-6 rounded-full bg-lime-500 hover:scale-110 transition" title="lime"></button>
+            <button onclick="setTheme('blue')" class="w-6 h-6 rounded-full bg-indigo-500 hover:scale-110 transition" title="Indigo"></button>
+            <button onclick="setTheme('purple')" class="w-6 h-6 rounded-full bg-purple-500 hover:scale-110 transition" title="Purple"></button>
+            <button onclick="setTheme('cyan')" class="w-6 h-6 rounded-full bg-cyan-500 hover:scale-110 transition" title="Cyan"></button>
+            <button onclick="setTheme('rose')" class="w-6 h-6 rounded-full bg-rose-500 hover:scale-110 transition" title="Rose"></button>
+          </div>
+          <button onclick="openBars()" class="text-white focus:outline-none">
+            <img src="/assets/Images/Bars.png" alt="Menu" class="w-4 h-4" />
+          </button>
+        </div>
+        <nav id="navList" class="hidden flex-col absolute top-full right-4 bg-white text-black py-2 px-4 shadow-lg rounded-lg text-sm font-medium w-48 border border-gray-200 z-40">
+          <a href="/" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">About</a>
+          <a href="/experience" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Experience</a>
+          <a href="/projects" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Projects</a>
+          <a href="/education" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Education</a>
+          <a href="/skills" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Skills</a>
+          <a href="/achievements" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Achievements</a>
+          <a href="/contact" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Contact</a>
+        </nav>
+      </div>
+
+      <!-- ✅ Experience Section -->
+      <div id="experience" class="xl:m-4 px-2 2xl:px-12 py-8 bg-transparent shadow-sm bg-transparent shadow-sm wow animate__fadeInUp" data-wow-duration="1s">
+        <!-- Heading -->
+        <div class="flex justify-start items-center gap-4 px-1 py-6 mb-2">
+          <span class="w-4 h-4 lg:w-6 lg:h-6 rounded-full bg-[var(--text-primary)] ring-2 ring-[var(--border-primary)]"></span>
+          <div class="text-xl lg:text-2xl 2xl:text-3xl">
+            <h1 class="text-[var(--text-primary)] font-bold capitalize">Experience</h1>
+          </div>
+        </div>
+
+        <!-- Experience Container -->
+        <section class="text-gray-600 body-font overflow-hidden">
+          <div class="container px-1 py-2 mx-auto mt-1 ">
+            <div class="divide-y-2 divide-gray-100 px-2 text-xs lg:text-sm 2xl:text-base" id="experienceList">
+              <% experiences.forEach(experience => { %>
+              <div class="mt-4 py-3 px-2 lg:px-2 grid grid-cols-4 gap-4 bg-white bg-opacity-90 text-gray-900 rounded-lg">
+                <div class="flex flex-col justify-center items-center gap-2 pl-2">
+                  <h2 class="font-semibold text-sm lg:text-base 2xl:text-lg text-center text-[var(--text-secondary)]"><%= experience.role %></h2>
+                  <p class="text-gray-700 text-xs lg:text-sm 2xl:text-base py-2 text-center">
+                    <span><%= experience.startDate %></span><span> to </span><span><%= experience.endDate %></span>
+                  </p>
+                </div>
+                <div class="col-span-3">
+                  <h2 class="text-base lg:text-lg 2xl:text-xl font-semibold text-gray-900 title-font py-3"><%= experience.company %></h2>
+                  <p class="text-xs lg:text-sm text-justify pr-4 leading-relaxed xl:leading-loose"><%= experience.description %></p>
+
+                  <% if (experience.buttons && experience.buttons.length > 0) { %>
+                  <div class="flex flex-wrap justify-start items-center py-1 gap-3 mt-2">
+                    <% experience.buttons.forEach(button => { %>
+                    <a href="<%= button.link %>" target="_blank" class="px-3 py-1.5 text-sm bg-[var(--bg-tertiary)] text-white rounded-xl shadow hover:bg-[var(--bg-primary)] transition duration-200">
+                      <%= button.text %>
+                    </a>
+                    <% }) %>
+                  </div>
+                  <% } %>
+
+                </div>
+              </div>
+              <% }); %>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+      <!-- ✅ Experience Section End -->
+
+      <!-- ✅ Footer -->
+      <div id="footer" class="xl:hidden mt-4 px-3 flex justify-around bg-white bg-opacity-90 items-center border-t-2 border-amber-500 text-amber-700 text-xs lg:text-sm lg:text-base 2xl:text-lg">
+        <div class="flex justify-center items-center gap-2 px-2 py-2">
+          <p>
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Gour Krishna Dey
+          </p>
+        </div>
+        <div class="flex justify-around items-center py-2 gap-1.5 lg:py-2 lg:gap-2">
+          <a target="_blank" href="https://github.com/gkdey17cse" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-amber-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+            <img src="/assets/Images/Github.png" alt="GitHub" class="w-8" />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/gour-krishna-dey-85b128214/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-amber-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+            <img src="/assets/Images/Linkedin.png" alt="LinkedIn" class="w-8" />
+          </a>
+          <a target="_blank" href="https://www.facebook.com/gourkrishna.dey.37/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-amber-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+            <img src="/assets/Images/Facebook.png" alt="Facebook" class="w-8" />
+          </a>
+          <a target="_blank" href="https://www.instagram.com/dhritisundar_de/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-amber-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+            <img src="/assets/Images/Instagram.png" alt="Instagram" class="w-8" />
+          </a>
+        </div>
+      </div>
+      <!-- ✅ FooterEnd  -->
+    </div>
+  </div>
+
+  <!-- ✅ Right Fixed Social Bar -->
+  <div class="fixed top-0 right-0 z-50 hidden min-h-screen xl:flex flex-col items-center justify-center gap-16 bg-transparent px-2 py-8">
+    <div class="hidden lg:flex flex-col gap-3 justify-end py-4">
+      <button onclick="setTheme('teal')" class="w-6 h-6 rounded-full bg-teal-500 hover:scale-110 transition" title="Teal"></button>
+      <button onclick="setTheme('amber')" class="w-6 h-6 rounded-full bg-amber-500 hover:scale-110 transition" title="Amber"></button>
+      <button onclick="setTheme('red')" class="w-6 h-6 rounded-full bg-red-500 hover:scale-110 transition" title="Red"></button>
+      <button onclick="setTheme('lime')" class="w-6 h-6 rounded-full bg-lime-500 hover:scale-110 transition" title="lime"></button>
+      <button onclick="setTheme('blue')" class="w-6 h-6 rounded-full bg-indigo-500 hover:scale-110 transition" title="Indigo"></button>
+      <button onclick="setTheme('purple')" class="w-6 h-6 rounded-full bg-purple-500 hover:scale-110 transition" title="Purple"></button>
+      <button onclick="setTheme('cyan')" class="w-6 h-6 rounded-full bg-cyan-500 hover:scale-110 transition" title="Cyan"></button>
+      <button onclick="setTheme('rose')" class="w-6 h-6 rounded-full bg-rose-500 hover:scale-110 transition" title="Rose"></button>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-3 py-2">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/gour-krishna-dey-85b128214/" target="_blank" class="transform transition-transform duration-300 hover:-translate-x-2">
+        <img src="/assets/Images/Linkedin.png" class="w-12 h-12 bg-white p-2 rounded-full shadow-md hover:scale-105 transition duration-300" />
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/gkdey17cse" target="_blank" class="transform transition-transform duration-300 hover:-translate-x-2">
+        <img src="/assets/Images/Github.png" class="w-12 h-12 bg-white p-2 rounded-full shadow-md hover:scale-105 transition duration-300" />
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/gourkrishna.dey.37" target="_blank" class="transform transition-transform duration-300 hover:-translate-x-2">
+        <img src="/assets/Images/Facebook.png" class="w-12 h-12 bg-white p-2 rounded-full shadow-md hover:scale-105 transition duration-300" />
+      </a>
+    </div>
+  </div>
+  <!-- ✅ Right Fixed Social Bar -->
+
+  <!-- jQuery (keep only one version, latest stable) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- jQuery Form Validation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <script src="./Javascript/themeColour.js"></script>
+  <script src="/Javascript/openBars.js"></script>
+
+</body>

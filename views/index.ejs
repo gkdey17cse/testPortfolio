@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CSS from /output.css -->
   <link href="/CSS/output.css" rel="stylesheet" />
+  <!-- Backup Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <title>Gour Krishna Dey | Portfolio</title>
@@ -44,75 +46,72 @@
 
 </head>
 
-<body class="relative mx-auto text-white tracking-wider" style="font-family: 'Poppins', sans-serif">
-  <!-- ✅ Fullscreen Background Image -->
-  <div class="fixed inset-0 w-screen h-screen bg-cover bg-center bg-no-repeat -z-20" style="background-image: url('/assets/Images/IIITDImage.jpg'); background-attachment: fixed;">
-  </div>
+<!-- Updated HTML with Tailwind CSS theme support -->
 
-  <!-- ✅ Fullscreen Overlay -->
+<body class="theme-teal relative mx-auto text-white tracking-wider" style="font-family: 'Poppins', sans-serif">
+  <!-- ✅ Background Image -->
+  <div class="fixed inset-0 w-screen h-screen bg-cover bg-center bg-no-repeat -z-20" style="background-image: url('/assets/Images/IIITDImage.jpg'); background-attachment: fixed;"></div>
   <div class="fixed inset-0 w-screen h-screen bg-black opacity-70 -z-10"></div>
 
   <div class="grid grid-cols-1 lg:grid-cols-12 xl:min-h-screen z-10 relative" style="font-family: 'Mulish', sans-serif">
-    <!-- ✅ Left Sidebar (1/6) -->
-    <div class="hidden lg:flex col-span-2 bg-gradient-to-b from-teal-700 to-teal-700 via-teal-500 rounded-r-2xl h-screen sticky top-0 shadow-md">
-      <div class="flex flex-col justify-center items-center p-2 gap-6 md:gap-4 flex-grow">
+    <!-- ✅ Sidebar -->
+    <div class="hidden lg:flex col-span-2 bg-gradient-to-b from-[var(--bg-primary)] to-[var(--bg-primary)] via-[var(--bg-secondary)] rounded-r-2xl h-screen sticky top-0 shadow-md">
+      <div class="flex flex-col justify-center items-center p-2 gap-16 md:gap-10 flex-grow">
         <div class="p-2 w-3/4">
-          <div class="flex justify-center items-center overflow-hidden rounded-full m-1 p-0.5 py border-yellow-300 border-8">
+          <div class="flex justify-center items-center overflow-hidden rounded-full m-1 p-0.5 py border-4 border-[var(--bg-primary)]">
             <img src="/assets/Images/Profile.png" alt="Profile Image" class="scale-110 hover:scale-105 duration-300 w-auto md:w-auto" />
           </div>
         </div>
         <div class="text-center flex flex-col gap-1.5 py-4 md:gap-0 tracking-wider">
-          <h2 class="text-white text-base xl:text-lg font-semibold wow animate__bounceIn">
-            Gour Krishna Dey
-          </h2>
-          <p class="text-white text-xs xl:text-sm">
-            M.Tech Student | IIIT-Delhi
-          </p>
+          <h2 class="text-white text-base xl:text-lg font-semibold wow animate__bounceIn">Gour Krishna Dey</h2>
+          <p class="text-white text-xs xl:text-sm">M.Tech Student | IIIT-Delhi</p>
           <p class="text-white text-xs xl:text-sm">Aspiring ML Engineer</p>
+          <p class="text-white text-xs xl:text-sm">MERN Developer</p>
         </div>
-
-        <!-- Menu Links -->
-        <div id="menu-content" class="py-1.5 text-white text-xs xl:text-sm 2xl:text-base wow animate__fadeInLeftBig" data-wow-duration="0.5s">
+        <div id="menu-content" class="py-1.5 text-white font-medium text-xs xl:text-sm 2xl:text-base wow animate__fadeInLeftBig" data-wow-duration="0.5s">
           <div class="flex flex-col items-center gap-2">
-            <a href="/" class="block hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">About Myself</a>
-            <a href="/experience" class="block hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Experience</a>
-            <a href="/projects" class="block hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Projects</a>
-            <a href="/education" class="block hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Education & Certifications</a>
-            <a href="/skills" class="block hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Skills</a>
-            <a href="/achievements" class="block hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Achievements</a>
-            <a href="/contact" class="block hover:font-bold hover:text-yellow-300 transition duration-300 active:translate-x-2">Contact</a>
+            <a href="/" class="block hover:font-bold  transition duration-300 active:translate-x-2">About Myself</a>
+            <a href="/experience" class="block hover:font-bold  transition duration-300 active:translate-x-2">Experience</a>
+            <a href="/projects" class="block hover:font-bold  transition duration-300 active:translate-x-2">Projects</a>
+            <a href="/education" class="block hover:font-bold  transition duration-300 active:translate-x-2">Education</a>
+            <a href="/skills" class="block hover:font-bold  transition duration-300 active:translate-x-2">Skills</a>
+            <a href="/achievements" class="block hover:font-bold  transition duration-300 active:translate-x-2">Achievements</a>
+            <a href="/contact" class="block hover:font-bold  transition duration-300 active:translate-x-2">Contact</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ✅ Right Content Area (5/6) -->
+    <!-- ✅ Main Content -->
     <div class="col-span-1 lg:col-span-10 relative z-10 xl:pr-4">
 
-      <!-- ✅ Mobile Sticky Navbar -->
-      <div class="lg:hidden sticky top-0 z-50 bg-teal-600 shadow-md">
-        <!-- Top bar -->
+      <div class="lg:hidden sticky top-0 z-50 bg-[var(--bg-tertiary)] shadow-md">
         <div class="flex justify-between items-center px-4 py-2.5">
           <img src="/assets/Images/Profile.png" alt="Profile" class="rounded-full w-10 h-11" />
-
-          <!-- Hamburger Button -->
+          <div class="flex gap-3 items-center justify-center">
+            <button onclick="setTheme('teal')" class="w-6 h-6 rounded-full bg-teal-500 hover:scale-110 transition" title="Teal"></button>
+            <button onclick="setTheme('amber')" class="w-6 h-6 rounded-full bg-amber-500 hover:scale-110 transition" title="Amber"></button>
+            <button onclick="setTheme('red')" class="w-6 h-6 rounded-full bg-red-500 hover:scale-110 transition" title="Red"></button>
+            <button onclick="setTheme('lime')" class="w-6 h-6 rounded-full bg-lime-500 hover:scale-110 transition" title="lime"></button>
+            <button onclick="setTheme('blue')" class="w-6 h-6 rounded-full bg-indigo-500 hover:scale-110 transition" title="Indigo"></button>
+            <button onclick="setTheme('purple')" class="w-6 h-6 rounded-full bg-purple-500 hover:scale-110 transition" title="Purple"></button>
+            <button onclick="setTheme('cyan')" class="w-6 h-6 rounded-full bg-cyan-500 hover:scale-110 transition" title="Cyan"></button>
+            <button onclick="setTheme('rose')" class="w-6 h-6 rounded-full bg-rose-500 hover:scale-110 transition" title="Rose"></button>
+          </div>
           <button onclick="openBars()" class="text-white focus:outline-none">
-            <img src="/assets/Images/Bars.png" alt="Menu" class="w-8 h-8" />
+            <img src="/assets/Images/Bars.png" alt="Menu" class="w-4 h-4" />
           </button>
         </div>
-
-        <!-- ✅ Dropdown menu in top-right corner -->
         <nav id="navList" class="hidden flex-col absolute top-full right-4 bg-white text-black py-2 px-4 shadow-lg rounded-lg text-sm font-medium w-48 border border-gray-200 z-40">
-          <a href="/" class="py-1.5 px-2 hover:text-teal-600">About</a>
-          <a href="/experience" class="py-1.5 px-2 hover:text-teal-600">Experience</a>
-          <a href="/projects" class="py-1.5 px-2 hover:text-teal-600">Projects</a>
-          <a href="/education" class="py-1.5 px-2 hover:text-teal-600">Education</a>
-          <a href="/skills" class="py-1.5 px-2 hover:text-teal-600">Skills</a>
-          <a href="/achievements" class="py-1.5 px-2 hover:text-teal-600">Achievements</a>
-          <a href="/contact" class="py-1.5 px-2 hover:text-teal-600">Contact</a>
+          <a href="/" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">About</a>
+          <a href="/experience" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Experience</a>
+          <a href="/projects" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Projects</a>
+          <a href="/education" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Education</a>
+          <a href="/skills" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Skills</a>
+          <a href="/achievements" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Achievements</a>
+          <a href="/contact" class="py-1.5 px-2 hover:text-[var(--bg-primary)]">Contact</a>
         </nav>
       </div>
-
 
       <!-- ✅ About Section -->
       <section id="about" class="min-h-screen flex items-center justify-center px-2 py-8 2xl:px-10 text-white">
@@ -122,10 +121,10 @@
           <div class="text-center lg:text-left max-w-7xl">
             <h1 class="font-bold text-lg lg:text-xl 2xl:text-2xl my-2 px-3 wow animate__fadeInDown">
               I'm
-              <span class="uppercase text-teal-400">GOUR KRISHNA DEY</span>
+              <span class="uppercase text-neutral-300">GOUR KRISHNA DEY</span>
             </h1>
-            <h2 class="text-2xl lg:text-3xl 2xl:text-4xl text-amber-400 px-3" style="font-family: 'Caveat Brush', cursive">
-              A <span id="profession"></span>
+            <h2 class="text-2xl lg:text-3xl 2xl:text-4xl text-[var(--text-primary)] px-3" style="font-family: 'Caveat Brush', cursive">
+              <span id="profession"></span>
             </h2>
             <p class="text-slate-100 px-3 py-4 text-sm xl:text-base text-justify leading-loose tracking-wider wow animate__fadeInUp">
               I'm an aspiring Machine Learning Engineer with a strong inclination towards Natural Language Processing and Web
@@ -137,13 +136,13 @@
             <!-- 🎯 Resume and Work Buttons -->
             <div class="flex flex-wrap justify-center lg:justify-start items-center gap-3 text-sm xl:text-base px-2 mt-4">
               <a href="/assets/PDF/Resume.pdf" target="_blank" class="wow animate__fadeInLeft" data-wow-duration="0.6s">
-                <button class="flex items-center gap-2 border-2 border-teal-300 shadow-sm hover:bg-teal-600 text-white font-semibold py-1.5 px-4 rounded-lg transition duration-150">
+                <button class="flex items-center gap-2 border-2 border-[var(--border-primary)] shadow-sm hover:bg-[var(--bg-secondary)] text-white font-semibold py-1.5 px-4 rounded-lg transition duration-150">
                   View Resume
                   <img src="/assets/Images/Resume.png" alt="Resume Icon" class="w-8 bg-white p-0.5 rounded-full" />
                 </button>
               </a>
               <a href="https://github.com/gkdey17cse" target="_blank" class="wow animate__fadeInRight" data-wow-duration="0.6s">
-                <button class="flex items-center gap-2 border-2 border-teal-300 bg-teal-600 text-white hover:bg-transparent hover:text-white font-semibold py-1.5 px-4 rounded-lg transition duration-150">
+                <button class="flex items-center gap-2 border-2 border-[var(--border-primary)] bg-[var(--bg-secondary)] text-white hover:bg-transparent hover:text-white font-semibold py-1.5 px-4 rounded-lg transition duration-150">
                   Explore My Work
                   <img src="/assets/Images/Explore.png" alt="Explore Icon" class="w-8 bg-white p-0.5 rounded-full" />
                 </button>
@@ -154,7 +153,7 @@
           <!-- 🌿 Bhagavad Gita + Hobbies -->
           <div class="w-full max-w-7xl text-center flex flex-col justify-center items-center gap-4">
             <div class="flex flex-col justify-center items-center gap-4 p-1.5">
-              <p class="text-base sm:text-lg md:text-xl font-semibold text-amber-300 font-serif leading-relaxed mb-3">
+              <p class="text-base sm:text-lg md:text-xl font-semibold text-amber-200 font-serif leading-relaxed mb-3">
                 कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।<br />
                 मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥
               </p>
@@ -187,9 +186,8 @@
       </section>
       <!-- ✅ About Section End -->
 
-
       <!-- ✅ Footer -->
-      <div id="footer" class="xl:hidden mt-4 px-3 flex justify-around bg-white bg-opacity-90 items-center border-t-2 border-teal-500 text-teal-700 text-xs lg:text-sm lg:text-base 2xl:text-lg">
+      <div id="footer" class="xl:hidden mt-4 px-3 flex justify-around bg-white bg-opacity-90 items-center border-t-2 border-amber-500 text-amber-700 text-xs lg:text-sm lg:text-base 2xl:text-lg">
         <div class="flex justify-center items-center gap-2 px-2 py-2">
           <p>
             ©
@@ -200,24 +198,37 @@
           </p>
         </div>
         <div class="flex justify-around items-center py-2 gap-1.5 lg:py-2 lg:gap-2">
-          <a target="_blank" href="https://github.com/gkdey17cse" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-teal-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+          <a target="_blank" href="https://github.com/gkdey17cse" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-amber-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
             <img src="/assets/Images/Github.png" alt="GitHub" class="w-8" />
           </a>
-          <a target="_blank" href="https://www.linkedin.com/in/gour-krishna-dey-85b128214/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-teal-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+          <a target="_blank" href="https://www.linkedin.com/in/gour-krishna-dey-85b128214/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-amber-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
             <img src="/assets/Images/Linkedin.png" alt="LinkedIn" class="w-8" />
           </a>
-          <a target="_blank" href="https://www.facebook.com/gourkrishna.dey.37/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-teal-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+          <a target="_blank" href="https://www.facebook.com/gourkrishna.dey.37/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-amber-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
             <img src="/assets/Images/Facebook.png" alt="Facebook" class="w-8" />
           </a>
-          <a target="_blank" href="https://www.instagram.com/dhritisundar_de/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-teal-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
+          <a target="_blank" href="https://www.instagram.com/dhritisundar_de/" class="transition-transform transform hover:scale-105 hover:ring-2 hover:ring-amber-500 hover:shadow-md hover:shadow-amber-300/60 rounded-full p-1 duration-300">
             <img src="/assets/Images/Instagram.png" alt="Instagram" class="w-8" />
           </a>
         </div>
       </div>
       <!-- ✅ FooterEnd  -->
     </div>
-    <!-- ✅ Right Fixed Social Bar -->
-    <div class="fixed top-1/3 right-0 z-50 hidden xl:flex flex-col items-center justify-center gap-4 bg-transparent px-2 py-8">
+  </div>
+
+  <!-- ✅ Right Fixed Social Bar -->
+  <div class="fixed top-0 right-0 z-50 hidden min-h-screen xl:flex flex-col items-center justify-center gap-16 bg-transparent px-2 py-8">
+    <div class="hidden lg:flex flex-col gap-3 justify-end py-4">
+      <button onclick="setTheme('teal')" class="w-6 h-6 rounded-full bg-teal-500 hover:scale-110 transition" title="Teal"></button>
+      <button onclick="setTheme('amber')" class="w-6 h-6 rounded-full bg-amber-500 hover:scale-110 transition" title="Amber"></button>
+      <button onclick="setTheme('red')" class="w-6 h-6 rounded-full bg-red-500 hover:scale-110 transition" title="Red"></button>
+      <button onclick="setTheme('lime')" class="w-6 h-6 rounded-full bg-lime-500 hover:scale-110 transition" title="lime"></button>
+      <button onclick="setTheme('blue')" class="w-6 h-6 rounded-full bg-indigo-500 hover:scale-110 transition" title="Indigo"></button>
+      <button onclick="setTheme('purple')" class="w-6 h-6 rounded-full bg-purple-500 hover:scale-110 transition" title="Purple"></button>
+      <button onclick="setTheme('cyan')" class="w-6 h-6 rounded-full bg-cyan-500 hover:scale-110 transition" title="Cyan"></button>
+      <button onclick="setTheme('rose')" class="w-6 h-6 rounded-full bg-rose-500 hover:scale-110 transition" title="Rose"></button>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-3 py-2">
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/gour-krishna-dey-85b128214/" target="_blank" class="transform transition-transform duration-300 hover:-translate-x-2">
         <img src="/assets/Images/Linkedin.png" class="w-12 h-12 bg-white p-2 rounded-full shadow-md hover:scale-105 transition duration-300" />
@@ -233,49 +244,41 @@
         <img src="/assets/Images/Facebook.png" class="w-12 h-12 bg-white p-2 rounded-full shadow-md hover:scale-105 transition duration-300" />
       </a>
     </div>
+  </div>
+  <!-- jQuery (keep only one version, latest stable) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- jQuery (must be first) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- jQuery Form Validation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Initialize Owl Carousel -->
-    <script>
-      $(window).on("load", function() {
-        $(".owl-carousel").owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: true,
-          items: 3,
-          autoplay: true,
-          //   autoplayTimeout: 5000,
-          //   autoplayHoverPause: true,
-        });
-      });
-    </script>
+  <!-- WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <!-- WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
-    <!-- WOW.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#profession", {
+      strings: ["MERN Developer", "Aspiring ML Engineer", "Software Developer"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+    });
+  </script>
 
-    <!-- Typed.js -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#profession", {
-        strings: ["UI-UX Designer", "Aspiring ML Engineer", "Software Developer"],
-        typeSpeed: 50,
-        backSpeed: 50,
-        loop: true,
-      });
-    </script>
+  <!-- Optional: EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <!-- Optional: EmailJS -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Optional: jQuery Validation (if using forms) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/Javascript/openBars.js"></script>
 
-    <!-- Optional: jQuery Validation (if using forms) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/Javascript/openBars.js"></script>
+  <script src="./Javascript/themeColour.js"></script>
+  <script src="/Javascript/openBars.js"></script>
+
 </body>

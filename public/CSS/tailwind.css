@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Theme Utilities using @apply */
+.theme-teal {
+  --bg-primary: theme('colors.teal.700');
+  --bg-tertiary: theme('colors.teal.600');
+  --bg-secondary: theme('colors.teal.500');
+  --text-primary: theme('colors.teal.400');
+  --text-secondary: theme('colors.teal.700');
+  --border-primary: theme('colors.teal.500');
+}
+.theme-amber {
+  --bg-primary: theme('colors.amber.700');
+  --bg-tertiary: theme('colors.amber.600');
+  --bg-secondary: theme('colors.amber.500');
+  --text-primary: theme('colors.amber.400');
+  --text-secondary: theme('colors.amber.700');
+  --border-primary: theme('colors.amber.500');
+}
+.theme-rose {
+  --bg-primary: theme('colors.rose.700');
+  --bg-secondary: theme('colors.rose.500');
+  --bg-tertiary: theme('colors.rose.600');
+  --text-primary: theme('colors.rose.400');
+  --text-secondary: theme('colors.rose.700');
+  --border-primary: theme('colors.rose.500');
+}
+.theme-cyan {
+  --bg-primary: theme('colors.cyan.700');
+  --bg-tertiary: theme('colors.cyan.600');
+  --bg-secondary: theme('colors.cyan.500');
+  --text-primary: theme('colors.cyan.400');
+  --text-secondary: theme('colors.cyan.700');
+  --border-primary: theme('colors.cyan.500');
+}
+.theme-blue {
+  --bg-primary: theme('colors.blue.700');
+  --bg-secondary: theme('colors.blue.500');
+  --bg-tertiary: theme('colors.blue.600');
+  --text-primary: theme('colors.blue.400');
+  --text-secondary: theme('colors.blue.700');
+  --border-primary: theme('colors.blue.500');
+}
+.theme-purple {
+  --bg-primary: theme('colors.purple.700');
+  --bg-secondary: theme('colors.purple.500');
+  --bg-tertiary: theme('colors.purple.600');
+  --text-primary: theme('colors.purple.400');
+  --text-secondary: theme('colors.purple.700');
+  --border-primary: theme('colors.purple.500');
+}
+.theme-lime {
+  --bg-primary: theme('colors.lime.700');
+  --bg-secondary: theme('colors.lime.500');
+  --text-primary: theme('colors.lime.400');
+  --bg-tertiary: theme('colors.lime.600');
+  --text-secondary: theme('colors.lime.700');
+  --border-primary: theme('colors.lime.500');
+}
+.theme-red {
+  --bg-primary: theme('colors.red.700');
+  --bg-secondary: theme('colors.red.500');
+  --bg-tertiary: theme('colors.red.600');
+  --text-primary: theme('colors.red.400');
+  --text-secondary: theme('colors.red.700');
+  --border-primary: theme('colors.red.500');
+}
+
+/* Apply variables using Tailwind-compatible classes */
+.bg-theme-primary {
+  background-color: var(--bg-primary);
+}
+.bg-theme-secondary {
+  background-color: var(--bg-secondary);
+}
+.text-theme-primary {
+  color: var(--text-primary);
+}
+.border-theme {
+  border-color: var(--border-primary);
+}
+.ring-theme {
+  --tw-ring-color: var(--border-primary);
+}
+.shadow-theme {
+  box-shadow: 0 4px 6px -1px var(--border-primary);
+}

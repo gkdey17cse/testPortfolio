@@ -1,4 +1,4 @@
-[
+const experience = [
   {
     "role": "Graduate Student Researcher",
     "company": "Network Security Lab | IIIT Delhi",
@@ -48,3 +48,5 @@
     ]
   }
 ]
+
+module.exports = experience ;

@@ -1,4 +1,4 @@
-[
+const skills = [
     {
         "category": "Expertise Area",
         "skills": [
@@ -59,3 +59,5 @@
         ]
     }
 ]
+
+module.exports = skills ;
