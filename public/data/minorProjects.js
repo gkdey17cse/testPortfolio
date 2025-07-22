@@ -32,7 +32,7 @@ const minorProjects = [
     "domain": "Web Development",
     "description": "Urban Spice is a complete restaurant website built with HTML, CSS, JavaScript, and jQuery. It offers smooth navigation with menu, booking, and contact features.",
     "image": "./assets/Images/Project/Urbanspice.jpg",
-    "link": "https://gkdey17cse.github.io/UrbanSpice/"
+    "link": "https://urban-spice.vercel.app/"
   },
   {
     "title": "Product Landing Page",
