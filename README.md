@@ -1,7 +1,3 @@
-Certainly! Here's a **professional and ready-to-copy** version of your portfolio documentation based on the latest project directory and technology stack you provided:
-
----
-
 # **🌐 Full-Stack Portfolio Website**
 
 This is a **responsive full-stack personal portfolio website** designed and developed to showcase my academic achievements, technical skills, major/minor projects, work experience, certifications, and contact details.
