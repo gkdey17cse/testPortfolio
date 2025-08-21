@@ -4,7 +4,7 @@ const education = [
     "degree": "Master of Technology in Computer Science & Engineering",
     "institute": "Indraprastha Institute of Information Technology (IIITD)",
     "duration": "( 2024 - Present )",
-    "cgpa": "8.27 (Upto 2nd Sem)",
+    "cgpa": "8.40 (Upto 2nd Sem)",
     "logo": "./assets/Images/Graduation_Cap_Degree.png"
   },
   {
