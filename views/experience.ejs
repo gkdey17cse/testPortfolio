@@ -128,7 +128,7 @@
           <div class="container px-1 py-2 mx-auto mt-1 ">
             <div class="divide-y-2 divide-gray-100 px-2 text-xs lg:text-sm 2xl:text-base" id="experienceList">
               <% experiences.forEach(experience => { %>
-              <div class="mt-4 py-3 px-2 lg:px-2 grid grid-cols-4 gap-4 bg-white bg-opacity-90 text-gray-900 rounded-lg">
+              <div class="mt-4 py-5 px-2 lg:px-2 grid grid-cols-4 gap-4 bg-white bg-opacity-90 text-gray-900 rounded-lg">
                 <div class="flex flex-col justify-center items-center gap-2 pl-2">
                   <h2 class="font-semibold text-sm lg:text-base 2xl:text-lg text-center text-[var(--text-secondary)]"><%= experience.role %></h2>
                   <p class="text-gray-700 text-xs lg:text-sm 2xl:text-base py-2 text-center">
@@ -142,7 +142,7 @@
                   <% if (experience.buttons && experience.buttons.length > 0) { %>
                   <div class="flex flex-wrap justify-start items-center py-1 gap-3 mt-2">
                     <% experience.buttons.forEach(button => { %>
-                    <a href="<%= button.link %>" target="_blank" class="px-3 py-1.5 text-sm bg-[var(--bg-tertiary)] text-white rounded-xl shadow hover:bg-[var(--bg-primary)] transition duration-200">
+                    <a href="<%= button.link %>" target="_blank" class="px-3 py-2.5 text-sm bg-[var(--bg-tertiary)] text-white rounded-sm shadow hover:bg-[var(--bg-primary)] transition duration-200">
                       <%= button.text %>
                     </a>
                     <% }) %>
