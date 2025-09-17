@@ -4,7 +4,7 @@ const education = [
     "degree": "Master of Technology in Computer Science & Engineering",
     "institute": "Indraprastha Institute of Information Technology (IIITD)",
     "duration": "( 2024 - Present )",
-    "cgpa": "8.40 (Upto 2nd Sem)",
+    "cgpa": "8.47 (Upto 2nd Sem)",
     "logo": "./assets/Images/Graduation_Cap_Degree.png"
   },
   {
@@ -12,7 +12,7 @@ const education = [
     "degree": "Bachelor of Technology in Computer Science & Engineering",
     "institute": "Government College of Engineering & Textile Technology, Serampore (MAKAUT)",
     "duration": "( 2020 - 2024 )",
-    "cgpa": "9.33 ( = 85.8%)",
+    "cgpa": "9.38 ( = 86.3%)",
     "logo": "./assets/Images/Graduation_Cap_Degree.png"
   },
   {
