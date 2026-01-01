@@ -1,6 +1,14 @@
 const majorProjects = [
   {
     "id": 1,
+    "title": "Unifylearn",
+    "subtitle": "Intelligent Cross-Platform Course Discovery Engine",
+    "logo": "./assets/Images/Project/Unifylearn_Logo.png",
+    "desc": "An AI-powered intelligent search and unification system that understands natural language queries, searches across multiple online learning platforms simultaneously, and returns enriched, standardized course information with automatically completed metadata, skill extraction, and contextual understanding for comprehensive learning discovery.",
+    "link": "https://github.com/gkdey17cse/Unifylearn"
+  },
+  {
+    "id": 2,
     "title": "Ratatouillegen",
     "subtitle": "LLM-based Recipe Prediction Platform",
     "logo": "./assets/Images/Project/Ratatouillegen.png",
@@ -8,20 +16,12 @@ const majorProjects = [
     "link": "https://cosylab.iiitd.edu.in/ratatouillegen/"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Claim Normalization using Transformers",
     "subtitle": "NLP Pipeline for Fact-Checking Enhancement",
     "logo": "./assets/Images/Project/claim.png",
     "desc": "Built a complete preprocessing pipeline for the <b>CLAN dataset</b> and fine-tuned <b>BART-base</b> & <b>T5-small</b> models for <i>claim normalization</i>, enabling better fact-checking on noisy social media text. Inspired by the paper <i>‘From Chaos to Clarity’</i>.",
     "link": "https://github.com/gkdey17cse/ClaimNormalization"
-  },
-  {
-    "id": 3,
-    "title": "Multithreaded Program Performance Analysis",
-    "subtitle": "Major Project on Linux Multithreading & perf",
-    "logo": "./assets/Images/Project/perf.png",
-    "desc": "Worked on <b><i>'Multithreaded Program Performance Analysis'</i></b> as a <b>Major Project</b> at IIIT-Delhi. Simulated CPU, memory, I/O, and mixed-bound workloads using multithreaded C code, profiled using Linux's <b><i>perf</i></b> tool. Automated builds via <b>Makefile</b> and visualized performance using thread-scalability graphs.",
-    "link": "https://github.com/gkdey17cse/Multithread-Perf-Analyzer"
   },
   {
     "id": 4,
@@ -33,4 +33,4 @@ const majorProjects = [
   }
 ]
 
-module.exports = majorProjects ;
+module.exports = majorProjects;

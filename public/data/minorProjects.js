@@ -35,11 +35,11 @@ const minorProjects = [
     "link": "https://urban-spice.vercel.app/"
   },
   {
-    "title": "Product Landing Page",
-    "domain": "Web Development",
-    "description": "A dynamic product landing page created using HTML, CSS, JavaScript, and Wow.js. It simulates an online store with smooth scrolling and interactive animations.",
-    "image": "./assets/Images/Project/ProductLanding.jpg",
-    "link": "https://gkdey17cse.github.io/InfoAidtech_Internship/Task1_ProductLandingPage.html"
+    "title": "Multithreaded Program Performance Analysis",
+    "domain": "Systems Programming / Performance Engineering",
+    "description": "A major academic project at IIIT-Delhi focused on analyzing the performance of multithreaded programs on Linux. Designed and implemented multithreaded C workloads simulating CPU-bound, memory-bound, I/O-bound, and mixed workloads. Profiled execution using Linux’s perf tool, automated builds with Makefile, and evaluated scalability through thread-wise performance visualizations.",
+    "image": "./assets/Images/Project/perf.png",
+    "link": "https://github.com/gkdey17cse/Multithread-Perf-Analyzer"
   }
 ]
 
